@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.FXCollections ?>
+
+<AnchorPane id="AnchorPane" prefHeight="454.0" prefWidth="813.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.ToolsLogin">
+   <children>
+      <AnchorPane layoutX="23.0" layoutY="20.0" prefHeight="414.0" prefWidth="733.0">
+         <children>
+            <ImageView fitHeight="86.0" fitWidth="700.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Cogni_logo.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="86.0" layoutY="125.0" text="User ID">
+               <font>
+                  <Font name="Calibri" size="12.0" />
+               </font></Label>
+            <TextField fx:id="UserID" layoutX="160.0" layoutY="121.0" prefHeight="25.0" prefWidth="455.0" />
+            <Label layoutX="75.0" layoutY="183.0" text="Password" />
+            <PasswordField fx:id="Password" layoutX="160.0" layoutY="179.0" prefHeight="25.0" prefWidth="455.0" />
+            <Label layoutX="58.0" layoutY="237.0" text="Environment" />
+            <ComboBox fx:id="EnvironmentSelection" layoutX="190.0" layoutY="233.0" prefWidth="150.0" promptText="Sandbox&#10;">
+        	     <items>
+       				<FXCollections fx:factory="observableArrayList">
+      					<String fx:value="Production" />
+      					<String fx:value="Sandbox" />      					
+       				</FXCollections>
+		     	</items>
+            </ComboBox>
+            <Button fx:id="Exit" layoutX="302.0" layoutY="338.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="141.0" text="Exit" />
+            <Button fx:id="Login" layoutX="495.0" layoutY="338.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="121.0" text="Login" />
+            <CheckBox fx:id="Remember" layoutX="199.0" layoutY="291.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Remember User" textFill="#f7f8f8" />
+            <CheckBox fx:id="TermsCondition" layoutX="367.0" layoutY="290.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="17.0" prefWidth="230.0" text="      I agree to the terms of service" textFill="#f5f7f8" />
+            <Label layoutX="358.0" layoutY="237.0" prefHeight="17.0" prefWidth="76.0" text="API Version" />
+            <ComboBox fx:id="EnvironmentSelection" layoutX="466.0" layoutY="233.0" prefWidth="150.0" promptText="44.0">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="43.0" />
+                     <String fx:value="42.0" />
+                  </FXCollections>
+               </items>
+            </ComboBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

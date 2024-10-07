@@ -1,0 +1,56 @@
+{
+  "ComparisonDetails": [
+    {
+      "ValidationRules": "[TestValidationRule, TestValidationRule_Account]",
+      "ObjectId": "objid-1",
+      "Triggers": "[HelloWorldTrigger]",
+      "LayoutDetails": [
+        {
+          "lid": "lid-1",
+          "LayoutName": "null",
+          "layoutID": "null"
+        }
+      ],
+      "ObjectName": "Account"
+    },
+    {
+      "ObjectId": "objid-2",
+      "LayoutDetails": [
+        {
+          "lid": "lid-1",
+          "LayoutName": "null",
+          "layoutID": "NA",
+          "RecordTypes": "[NA]"
+        }
+      ],
+      "ObjectName": "TestObject__ChangeEvent"
+    },
+    {
+      "ObjectId": "objid-3",
+      "LayoutDetails": [
+        {
+          "lid": "lid-1",
+          "LayoutName": "null",
+          "layoutID": "NA",
+          "RecordTypes": "[NA]"
+        }
+      ],
+      "ObjectName": "TestObject__Share"
+    },
+    {
+      "ObjectId": "objid-4",
+      "LayoutDetails": [
+        {
+          "Fields": "[Created By, , Custom Object, , Impact Analyzer Compatible, Last Modified By, TestObject Name, Owner, Custom Object, Impact Analyzer Compatible, TestObject Name, Owner]",
+          "RelatedLists": "[Open Activities, Activity History, Notes \u0026 Attachments]",
+          "lid": "lid-1",
+          "LayoutName": "TestObject__c-TestObject Layout",
+          "Buttons": "[Change Owner, Change Record Type, Clone, Delete, Edit, Printable View, Sharing, Test Button]",
+          "layoutID": "00h5x00000NTmoNAAT",
+          "RecordTypes": "[Master, TestObjectRecordType]"
+        }
+      ],
+      "ObjectName": "TestObject__c"
+    }
+  ]
+}

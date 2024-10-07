@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="723.0" prefWidth="1017.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.HomePage">
+ <children>
+	<Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="25.0" layoutX="26.0" layoutY="32.0" stroke="BLACK" strokeType="INSIDE" width="191.0" />
+	<Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="24.0" layoutX="26.0" layoutY="125.0" stroke="BLACK" strokeType="INSIDE" width="193.0" />
+	<Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="25.0" layoutX="25.0" layoutY="223.0" stroke="BLACK" strokeType="INSIDE" width="195.0" />
+	<Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1fff88" height="26.0" layoutX="26.0" layoutY="301.0" stroke="BLACK" strokeType="INSIDE" width="334.0" />
+	<Label fx:id="LblOrganizationInformation" layoutX="34.0" layoutY="34.0" prefHeight="21.0" prefWidth="169.0" text="Organization Information" textAlignment="CENTER">
+	   <font>
+		  <Font name="System Bold" size="12.0" />
+	   </font>
+	</Label>
+	<Label fx:id="LblLoginUserInfo" layoutX="36.0" layoutY="127.0" prefHeight="20.0" prefWidth="164.0" text="Logged In User Information">
+	   <font>
+		  <Font name="System Bold" size="12.0" />
+	   </font>
+	</Label>
+	<Label fx:id="LblConnectionInformation" layoutX="42.0" layoutY="227.0" prefHeight="17.0" prefWidth="164.0" text="Connection Information">
+	   <font>
+		  <Font name="System Bold" size="12.0" />
+	   </font>
+	</Label>
+	<Label fx:id="LblOrganizationName" layoutX="31.0" layoutY="66.0" prefHeight="17.0" prefWidth="132.0" text="Organization Name : " />
+	<Label fx:id="LblOrganizationInstance" layoutX="66.0" layoutY="100.0" text="Org Instance : " />
+	<Label fx:id="LblOrganizationID" layoutX="532.0" layoutY="66.0" text="Organization ID : " />
+	<Label fx:id="LblOrganizationEdition" layoutX="529.0" layoutY="100.0" text="Organization Edition :" />
+	<TextField id="txtOrganizationName" fx:id="TextOrganizationName" layoutX="181.0" layoutY="62.0" prefHeight="25.0" prefWidth="290.0" />
+	<TextField id="txtOrganizationInstance" fx:id="TextOrganizationInstance" layoutX="181.0" layoutY="96.0" prefHeight="25.0" prefWidth="290.0" />
+	<TextField id="txtOrganizationID" fx:id="TextOrganizationID" layoutX="661.0" layoutY="62.0" prefHeight="25.0" prefWidth="282.0" />
+	<TextField id="txtOrganizationEdition" fx:id="TextOrganizationEdition" layoutX="662.0" layoutY="96.0" prefHeight="25.0" prefWidth="282.0" />
+	<Label fx:id="LblLoginUserName" layoutX="64.0" layoutY="162.0" text="User Name : " />
+	<Label fx:id="LblLoginUserEmailID" layoutX="552.0" layoutY="162.0" text="Email ID : " />
+	<Label fx:id="LblOrgPrimaryContact" layoutX="28.0" layoutY="195.0" text="Org Primary Contact  : " />
+	<Label fx:id="LblLoginUserProfileID" layoutX="550.0" layoutY="195.0" prefHeight="17.0" prefWidth="68.0" text="Profile ID : " />
+	<TextField id="txtUsername" fx:id="TextLoginUserName" layoutX="181.0" layoutY="156.0" prefHeight="25.0" prefWidth="290.0" />
+	<TextField id="txtRoleID" fx:id="TextOrgPrimaryContact" layoutX="181.0" layoutY="190.0" prefHeight="25.0" prefWidth="290.0" />
+	<TextField id="txtEmailID" fx:id="TextLoginUserEmailID" layoutX="661.0" layoutY="156.0" prefHeight="25.0" prefWidth="282.0" />
+	<TextField id="txtProfileID" fx:id="TextLoginUserProfileID" layoutX="661.0" layoutY="192.0" prefHeight="25.0" prefWidth="282.0" />
+	<TextField id="txtAPIVersion" fx:id="TextSandboxFlag" layoutX="184.0" layoutY="256.0" prefHeight="25.0" prefWidth="121.0" />
+	<TextField id="txtEndPURL" fx:id="TextConnectionAPIEndPointURL" layoutX="493.0" layoutY="257.0" prefHeight="25.0" prefWidth="452.0" />
+	<Label fx:id="LblSandboxFlag" layoutX="39.0" layoutY="261.0" text="Is this a Sandbox ?" />
+	<Label fx:id="LblConnectionAPIEndPointURL" layoutX="375.0" layoutY="259.0" text="End Point URL : " />
+	<Label fx:id="LblDateSelectionSection" layoutX="77.0" layoutY="306.0" prefHeight="17.0" prefWidth="262.0" text="Select the Tabs as per your choice">
+	   <font>
+		  <Font name="System Bold" size="12.0" />
+	   </font>
+	</Label>
+	<Button id="ButtonClickMoreDetails" fx:id="BtnClickForMoreDetails" layoutX="66.0" layoutY="654.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="32.0" prefWidth="214.0" text="Click To Generate Excel Reports" />
+      <Button id="ButtonBack" fx:id="BtnBack" layoutX="844.0" layoutY="20.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Back" />
+      <Button id="ButtonExit" fx:id="BtnExit" layoutX="900.0" layoutY="20.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="41.0" text="Exit" />
+      <Button id="ButtonClearDB" fx:id="BtnClearDB" layoutX="653.0" layoutY="20.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="174.0" text="Clear Last Execution Details" />
+      <TextField fx:id="ExcelFilePath" layoutX="301.0" layoutY="655.0" prefHeight="32.0" prefWidth="670.0" />
+      <TabPane fx:id="SFDCComparisonTabPane" blendMode="DARKEN" layoutX="22.0" layoutY="339.0" prefHeight="320.0" prefWidth="957.0" tabClosingPolicy="UNAVAILABLE" tabMinHeight="50.0" tabMinWidth="50.0">
+        <tabs>
+          <Tab id="LatestConfigComparisonTab" fx:id="LatestConfigComparisonTab" closable="false" text="Retrieve Latest SFDC Components and Compare Now">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="253.0" prefWidth="957.0">
+                     <children>
+                  	<Label fx:id="LblCurrentConfigDate" layoutX="31.0" layoutY="30.0" prefHeight="56.0" prefWidth="201.0" text="Retrieve Latest Configuration By Clicking &quot;Get Latest Org Configurations&quot; Button" textAlignment="CENTER" wrapText="true" />
+                        <TextField fx:id="LCT_TextShowCurrentConfigDate" layoutX="243.0" layoutY="39.0" prefHeight="38.0" prefWidth="440.0" />
+                  	<Button id="ButtonLatestOrgConfiguration" fx:id="LCT_BtnGetLatestOrgConfigurations" layoutX="695.0" layoutY="45.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="254.0" text="Get Latest Org Configurations" />
+                  	<Label layoutX="31.0" layoutY="109.0" prefHeight="66.0" prefWidth="201.0" text="Pick your First Config Date (From your previous retrieval dates), you want to Compare With :  " textAlignment="CENTER" wrapText="true" />
+                  	<DatePicker fx:id="LCT_DPSelectLastConfigFromDate_First" layoutX="243.0" layoutY="113.0" prefHeight="25.0" prefWidth="214.0">
+                  	   <tooltip>
+                  		  <Tooltip text="Select From Date" />
+                  	   </tooltip>
+                        </DatePicker>
+                  	<DatePicker fx:id="LCT_DPSelectLastConfigToDate_First" layoutX="479.0" layoutY="113.0" prefHeight="25.0" prefWidth="206.0">
+                  	   <tooltip>
+                  		  <Tooltip text="Select To Date" />
+                  	   </tooltip>
+                  	</DatePicker>
+                  	<Button fx:id="LCT_BtnConfirm_First" layoutX="695.0" layoutY="113.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="254.0" text="Confirm" />
+                  	<ComboBox fx:id="LCT_SelectFinalConfigFromDate_First" editable="true" layoutX="244.0" layoutY="149.0" prefHeight="26.0" prefWidth="439.0" visibleRowCount="50" />
+                        <Button id="LCT_BtnCompareOrgConfigurations" fx:id="LCT_BtnCompareOrgConfigurations" layoutX="338.0" layoutY="203.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="43.0" prefWidth="313.0" text="Click here to start Comparison" textFill="#35ab20">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab id="HistoricalComparisonTab" fx:id="HistoricalComparisonTab" text="Run Comparison Between Previous Retrievals">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="284.0" prefWidth="969.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="20.0" prefHeight="66.0" prefWidth="201.0" text="Pick your First Config Date (From your previous retrieval dates), you want to Compare With :  " textAlignment="CENTER" wrapText="true" />
+                        <DatePicker fx:id="HCT_DPSelectLastConfigFromDate_First" layoutX="232.0" layoutY="20.0" prefHeight="25.0" prefWidth="214.0">
+                           <tooltip>
+                              <Tooltip text="Select From Date" />
+                           </tooltip>
+                        </DatePicker>
+                        <Label layoutX="14.0" layoutY="101.0" prefHeight="77.0" prefWidth="201.0" text="Pick your Second Config Date (From your previous retrieval dates), you want to Compare To :  " textAlignment="CENTER" wrapText="true" />
+                        <DatePicker fx:id="HCT_DPSelectLastConfigFromDate_Second" layoutX="232.0" layoutY="113.0" prefHeight="25.0" prefWidth="214.0">
+                           <tooltip>
+                              <Tooltip text="Select From Date" />
+                           </tooltip>
+                        </DatePicker>
+                        <DatePicker fx:id="HCT_DPSelectLastConfigToDate_Second" layoutX="466.0" layoutY="113.0" prefHeight="25.0" prefWidth="206.0">
+                           <tooltip>
+                              <Tooltip text="Select To Date" />
+                           </tooltip>
+                        </DatePicker>
+                        <ComboBox fx:id="HCT_SelectFinalConfigFromDate_Second" editable="true" layoutX="233.0" layoutY="152.0" prefHeight="25.0" prefWidth="439.0" visibleRowCount="50" />
+                        <Button fx:id="HCT_BtnConfirm_Second" layoutX="691.0" layoutY="113.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="254.0" text="Confirm" />
+                  	<Button id="HCT_BtnCompareOrgConfigurations" fx:id="HCT_BtnCompareOrgConfigurations" layoutX="329.0" layoutY="193.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="44.0" prefWidth="300.0" text="Click here to Start Comparison" textFill="#35ab20">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Button>
+                        <DatePicker fx:id="HCT_DPSelectLastConfigToDate_First" layoutX="466.0" layoutY="20.0" prefHeight="25.0" prefWidth="206.0">
+                           <tooltip>
+                              <Tooltip text="Select To Date" />
+                           </tooltip>
+                        </DatePicker>
+                        <ComboBox fx:id="HCT_SelectFinalConfigFromDate_First" editable="true" layoutX="233.0" layoutY="60.0" prefHeight="26.0" prefWidth="439.0" visibleRowCount="50" />
+                        <Button fx:id="HCT_BtnConfirm_First" layoutX="691.0" layoutY="20.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="254.0" text="Confirm" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab id="QuickViewTab" fx:id="QuickViewTab" text="Quick view of Components Modified Within Last N Days">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="266.0" prefWidth="983.0">
+                     <children>
+                        <TextField fx:id="QVT_EnterNDays" layoutX="446.0" layoutY="148.0" prefHeight="38.0" prefWidth="121.0" />
+                        <Label layoutX="127.0" layoutY="108.0" prefHeight="110.0" prefWidth="282.0" text="Enter the No. of Days, for which You want to see Changes :" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Button id="QVT_BtnCompareOrgConfigurations" fx:id="QVT_BtnCompareOrgConfigurations" layoutX="597.0" layoutY="147.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="39.0" prefWidth="290.0" text="Click here to start Comparison" textFill="#35ab20">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="27.0" layoutY="25.0" prefHeight="83.0" prefWidth="923.0" text="Note : This comparison will show you the changes related to Salesforce components which being controlled by Metadata API and have/had been Created/Modified/Deleted in LAST_N_DAYS. here N is the No. of Days you going to fill in below Textbox. And Click Here to See Salesforce Components Details, which You can be seen in output result." textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font name="System Italic" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <effect>
+            <Blend />
+         </effect>
+      </TabPane>
+ </children>
+</AnchorPane>

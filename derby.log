@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Fri Oct 04 09:11:09 IST 2024:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.2 - (1629631): instance a816c00e-0192-559d-fab8-00000eea9390 
+on database directory C:\Users\2266819\CCTP\SFDC_Quality_Analyzer_V2\lib\lksfdb with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@5c647e05 
+Loaded from file:/C:/Users/2266819/CCTP/SFDC_Quality_Analyzer_V2/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=21.0.3+7-LTS-152
+user.dir=C:\Users\2266819\CCTP\SFDC_Quality_Analyzer_V2
+os.name=Windows 11
+os.arch=amd64
+os.version=10.0
+derby.system.home=C:\Users\2266819\CCTP\SFDC_Quality_Analyzer_V2\lib\db-derby-10.14.2.0-bin\bin
+Database Class Loader started - derby.database.classpath=''

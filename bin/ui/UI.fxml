@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.OrgSummaryPage">
+    <children>
+      <Accordion fx:id="OrgComponentDetailContainer" layoutX="14.0" layoutY="353.0" prefHeight="375.0" prefWidth="1001.0">
+        <panes>
+          <TitledPane animated="false" prefHeight="305.0" prefWidth="1001.0" text="A-E">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="fxTableViewAE" layoutX="14.0" layoutY="14.0" prefHeight="225.0" prefWidth="961.0">
+                          <columns>
+                            <TableColumn fx:id="fxtblColumnAEMT" prefWidth="100.0" text="Metadata Type" />
+                            <TableColumn fx:id="fxtblColumnAEMN" minWidth="6.0" prefWidth="163.0" text="Metadata Name" />
+                              <TableColumn fx:id="fxtblColumnAEID" prefWidth="182.0" text="ID" />
+                              <TableColumn fx:id="fxtblColumnAECDT" prefWidth="249.0" text="Created Date Time" />
+                              <TableColumn fx:id="fxtblColumnAELMDT" prefWidth="266.0" text="Last Modified Date Time" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </TitledPane>
+          <TitledPane animated="false" text="F-I">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView prefHeight="225.0" prefWidth="961.0">
+                           <columns>
+                              <TableColumn prefWidth="93.0" text="Metadata Type" />
+                              <TableColumn minWidth="6.0" prefWidth="127.0" text="Metadata Name" />
+                              <TableColumn prefWidth="197.0" text="ID" />
+                              <TableColumn prefWidth="277.0" text="Created Date Time" />
+                              <TableColumn prefWidth="266.0" text="Last Modified Date Time" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </TitledPane>
+          <TitledPane animated="false" text="J-N">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView prefHeight="225.0" prefWidth="961.0">
+                           <columns>
+                              <TableColumn prefWidth="93.0" text="Metadata Type" />
+                              <TableColumn minWidth="6.0" prefWidth="127.0" text="Metadata Name" />
+                              <TableColumn prefWidth="197.0" text="ID" />
+                              <TableColumn prefWidth="277.0" text="Created Date Time" />
+                              <TableColumn prefWidth="266.0" text="Last Modified Date Time" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </TitledPane>
+            <TitledPane animated="false" text="O-S">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView prefHeight="225.0" prefWidth="961.0">
+                           <columns>
+                              <TableColumn prefWidth="93.0" text="Metadata Type" />
+                              <TableColumn minWidth="6.0" prefWidth="127.0" text="Metadata Name" />
+                              <TableColumn prefWidth="197.0" text="ID" />
+                              <TableColumn prefWidth="277.0" text="Created Date Time" />
+                              <TableColumn prefWidth="266.0" text="Last Modified Date Time" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </TitledPane>
+            <TitledPane animated="false" prefHeight="293.0" prefWidth="1001.0" text="T-Z">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="614.0" prefWidth="983.0">
+                     <children>
+                        <TableView layoutX="-1.0" prefHeight="225.0" prefWidth="961.0">
+                           <columns>
+                              <TableColumn prefWidth="93.0" text="Metadata Type" />
+                              <TableColumn minWidth="6.0" prefWidth="127.0" text="Metadata Name" />
+                              <TableColumn prefWidth="197.0" text="ID" />
+                              <TableColumn prefWidth="277.0" text="Created Date Time" />
+                              <TableColumn prefWidth="266.0" text="Last Modified Date Time" />
+                           </columns>
+                        </TableView>
+                     </children></AnchorPane>
+              </content>
+            </TitledPane>
+        </panes>
+      </Accordion>
+      <Button fx:id="BtnGenerateUseCase" layoutX="1030.0" layoutY="605.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="31.0" prefWidth="207.0" text="Generate Use Cases" />
+      <Button fx:id="BtnGenerateReport" layoutX="1030.0" layoutY="561.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="31.0" prefWidth="207.0" text="Generate  Comparison Report" />
+      <Button id="ButtonBack" fx:id="BtnBack" layoutX="1144.0" layoutY="689.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Back" />
+      <Button id="ButtonExit" fx:id="BtnExit" layoutX="1196.0" layoutY="689.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="41.0" text="Exit" />
+      <Button layoutX="1030.0" layoutY="648.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="207.0" text="Launch CITS Automation Tool" />
+      <BorderPane prefHeight="330.0" prefWidth="1013.0" AnchorPane.bottomAnchor="410.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="225.0" AnchorPane.topAnchor="15.0">
+         <center>
+            <GridPane fx:id="fxGridPane" minHeight="329.0" minWidth="974.0" prefHeight="329.0" prefWidth="1014.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="191.0" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="191.0" minHeight="10.0" prefHeight="163.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="209.0" minHeight="10.0" prefHeight="141.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="fxGridLabel1" prefHeight="17.0" prefWidth="248.0" />
+                  <Label fx:id="fxGridLabel2" prefHeight="17.0" prefWidth="251.0" GridPane.columnIndex="1" />
+                  <Label fx:id="fxGridLabel3" prefHeight="17.0" prefWidth="246.0" GridPane.columnIndex="2" />
+                  <Label fx:id="fxGridLabel4" prefHeight="17.0" prefWidth="250.0" GridPane.columnIndex="3" />
+                  <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+         </center>
+      </BorderPane>
+    </children>
+   <effect>
+      <Glow />
+   </effect>
+</AnchorPane>
